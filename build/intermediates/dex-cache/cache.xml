@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/cglib-2.2.1-v20090111-c7078a8d1ea82406dc8b2657090058e19c356f4f.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu.inject/cglib/2.2.1-v20090111/7ce5e983fd0e6c78346f4c9cbfa39d83049dda2/cglib-2.2.1-v20090111.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2"/>
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/picasso-2.3.2-7588a0e9c111b009a2a4cdf85616ba56ab160680.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27"/>
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/asm-3.1-fd8cbd28ddefe3fdafec7db2134b0466c5d38e14.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/asm/asm/3.1/c157def142714c544bdea2e6144645702adf7097/asm-3.1.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="c157def142714c544bdea2e6144645702adf7097"/>
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/guice-3.0-no_aop-38cbc9e813c9db0645e7b78d74ed9c37752c4361.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/28586dc97c525501329d9a242fc3402041e3572d/guice-3.0-no_aop.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d"/>
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/javax.inject-1-a9465de7565b08caf9e98b3fb2343a27b3233e3f.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38"/>
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/aopalliance-1.0-8287e86d2ba026b765cfff3c9ec2bca4fa1bf43b.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8"/>
+    <item
+        dex="/Users/shuhei/AndroidStudioProjects/Weather/app/build/intermediates/pre-dexed/debug/roboguice-2.0-4f19a7376ea5341442c6ae1553d13b5ede393cc2.jar"
+        jar="/Users/shuhei/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/2.0/727ccb8f376109d0b5c44abca6f791dccc5c5dbc/roboguice-2.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc"/>
+
+</pre-dex-items>

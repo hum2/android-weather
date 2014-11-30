@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="prefectures">
+        <item>Aichi</item>
+        <item>Akita</item>
+        <item>Aomori</item>
+        <item>Chiba</item>
+        <item>Ehime</item>
+        <item>Fukui</item>
+        <item>Fukuoka</item>
+        <item>Fukushima</item>
+        <item>Gifu</item>
+        <item>Gunma</item>
+        <item>Hiroshima</item>
+        <item>Sapporo,Hokkaido</item>
+        <item>Hyogo</item>
+        <item>Ibaraki</item>
+        <item>Ishikawa</item>
+        <item>Iwate</item>
+        <item>Kagawa</item>
+        <item>Kagoshima</item>
+        <item>Kanagawa</item>
+        <item>Kochi</item>
+        <item>Kumamoto</item>
+        <item>Kyoto</item>
+        <item>Tsu,Mie</item>
+        <item>Miyagi</item>
+        <item>Miyazaki</item>
+        <item>Nagano</item>
+        <item>Nagasaki</item>
+        <item>Nara</item>
+        <item>Niigata</item>
+        <item>Oita</item>
+        <item>Okayama</item>
+        <item>Naha,Okinawa</item>
+        <item>Osaka</item>
+        <item>Saga,Saga</item>
+        <item>Saitama</item>
+        <item>Shiga</item>
+        <item>Shimane</item>
+        <item>Shizuoka</item>
+        <item>Tochigi</item>
+        <item>Tokushima</item>
+        <item>Tokyo</item>
+        <item>Tottori</item>
+        <item>Toyama</item>
+        <item>Wakayama</item>
+        <item>Yamagata,Yamagata</item>
+        <item>Yamaguchi,Yamaguchi</item>
+        <item>Yamanashi</item>
+    </string-array>
+</resources>

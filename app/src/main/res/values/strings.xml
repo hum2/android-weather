@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather</string>
+
+    <!-- static values -->
+    <string name="weather_api_url">http://api.openweathermap.org/data/2.5/weather?q=%s,jp</string>
+    <string name="weather_icno_url">"http://openweathermap.org/img/w/%s.png</string>
+</resources>

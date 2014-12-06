@@ -1,15 +1,10 @@
 package jp.asciimw.androidbook.chapter2.weather;
 
-import android.content.Context;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.LayoutInflater;
+import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Button;
 
 import com.google.inject.Inject;
 
@@ -27,6 +22,7 @@ import java.util.List;
 
 import roboguice.activity.RoboListActivity;
 import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 
 @ContentView(R.layout.main)
 public class Weather2Activity
@@ -35,11 +31,8 @@ public class Weather2Activity
     private List<Weather> mWeatherList;
     private WeatherArrayAdapter mAdapter;
 
-    public void click(View view)
-    {
-        getAllWeatherData();
-        view.setEnabled(false);
-    }
+    @InjectView(R.id.executeBtn)
+    private Button executeBtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -48,76 +41,43 @@ public class Weather2Activity
         mWeatherList = new ArrayList<Weather>();
         mAdapter = new WeatherArrayAdapter(getApplicationContext(), mWeatherList);
         getListView().setAdapter(mAdapter);
+        executeBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                getAllWeatherData();
+                v.setEnabled(false);
+            }
+        });
     }
 
     private void getAllWeatherData()
     {
         final String[] prefectures = getResources().getStringArray(R.array.prefectures);
+        Log.d("HOGE", "getAllWeatherData");
         for (String prefecture : prefectures) {
             new WeatherThread(getResources().getString(R.string.weather_api_url, prefecture)).start();
-        }
-    }
-
-    private class WeatherArrayAdapter
-            extends ArrayAdapter<Weather>
-    {
-        private LayoutInflater mInflater;
-
-        public WeatherArrayAdapter(Context context, List<Weather> weatherList)
-        {
-            super(context, 0, weatherList);
-            mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent)
-        {
-            ViewHolder holder;
-
-            if (convertView == null) {
-                convertView = mInflater.inflate(R.layout.row, null, false);
-                holder = new ViewHolder();
-                holder.icon = (ImageView) convertView.findViewById(R.id.icon);
-                holder.city = (TextView) convertView.findViewById(R.id.city_name);
-                convertView.setTag(holder);
-            } else {
-                holder = (ViewHolder) convertView.getTag();
-            }
-            Weather weather = getItem(position);
-            holder.city.setText(weather.city);
-            String iconUrl = weather.weatherIconUrl;
-            holder.icon.setTag(iconUrl);
-            Bitmap b = ImageMap.getImage(iconUrl);
-            if (b != null) {
-                holder.icon.setImageBitmap(b);
-            } else {
-                holder.icon.setImageDrawable(null);
-                new SetImageTask(iconUrl, holder.icon).execute((Void) null);
-            }
-            return convertView;
-        }
-
-        private class ViewHolder
-        {
-            TextView city;
-            ImageView icon;
         }
     }
 
     private class WeatherThread
             extends Thread
     {
+        @Inject
         private DefaultHttpClient mClient;
         @Inject
         private WeatherFeedParserInterface mParser;
+        @Inject
         private Handler mUIHandler;
         private String mUrl;
 
         private WeatherThread(String url)
         {
-            mUIHandler = new Handler();
-            mClient = new DefaultHttpClient();
+//            mUIHandler = new Handler();
+//            mClient = new DefaultHttpClient();
             mUrl = url;
+            Log.d("HOGE", "WeatherThread");
         }
 
         @Override

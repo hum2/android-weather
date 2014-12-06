@@ -1,7 +1,6 @@
 package jp.asciimw.androidbook.chapter2.weather;
 
 import android.os.Bundle;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -48,7 +47,7 @@ public class Weather1Activity
             String url = getResources().getString(R.string.weather_api_url, prefecture);
             try {
                 new WeatherAsyncTask(this, mWeatherList, mAdapter, url).execute();
-            }  catch(Exception e) {
+            } catch (Exception e) {
                 Log.d(Weather1Activity.class.getSimpleName(), e.getMessage());
             }
         }
